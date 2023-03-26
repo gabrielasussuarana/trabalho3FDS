@@ -1,0 +1,30 @@
+Para resolver esses problemas propostos no exercicio 1 foi utilizado o padrão facotry, 
+onde permite criar objetos que podem ser complexos separados, não precisando ser tudo em 
+uma classe, sendo assim criamos os seguintes arquivos:
+
+Ilist e ISet - duas interfaces onde definem os métodos que precisam ser usados para resolver os problemas
+
+Arraylist - Problema:
+O tamanho da coleção é conhecido de antemão e deseja-se visitar os elementos na ordem que foram inseridos.
+Criado para resolver esse problema pois o ArrayList mantém a ordem em que os elementos foram inseridos, e seu tamanho é conhecido 
+de antemão.
+
+Linkedlist - Problema:
+O tamanho da coleção é desconhecido de antemão e deseja-se visitar os elementos na ordem em que foram inseridos.
+Criado para resolver esse problema pois uma LinkedList pode ter seu tamanho desconhecido, 
+pois sua capacidade é dinâmica e como o arraylist ela mantém a ordem dos elementos.
+
+HashSets - Problema 
+O tamanho da coleção é desconhecido de antemão, a ordem de iteração não é importante e não se admitem elementos repetidos na coleção.
+Criado para resolver esse problema pois a ordem dos elementos pode variar, não permite elementos repetidos como mostra o exemplo e seu tamanho 
+também é desconhecido devido ser dinâmica.
+
+Treesets - Problema
+O tamanho da coleção é desconhecido, não se admitem elementos repetidos na coleção e a iteração deve seguir uma ordenação natural dos elementos.
+Criado para resolver esse problema pois ela permite que os elementos sejam mantidos em ordem natural, seu tamanho também é dinâmico e não permite elementos
+repetidos como no exemplo.
+
+ListFactory - Essa foi a classe onde foi implementado o padrão factory, onde permite o acesso aos objetos sem estarem dentro 
+dela, resultando em uma escabilidade e uma flexibilidade maior.
+
+Main - Classe responsável por executar o programa.
